@@ -1,7 +1,7 @@
 <h2>Meu Linktree Personalizado </h2> 
 
 
-<p> Bem-vindo ao meu  <a href="https://mleilane.github.io/LinkTree/"> Linktree personalizado! </a> <br>
+<p> Bem-vindo ao meu  <a href="https://mleilane-linktree.netlify.app/"> Linktree personalizado! </a> <br>
   Este projeto foi criado usando HTML e CSS e serve como um hub centralizado para todos os meus links de redes sociais e plataformas online. 
   Sinta-se à vontade para explorá-lo e conferir minhas atividades online.</p>
 

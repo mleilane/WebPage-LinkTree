@@ -9,31 +9,36 @@ body {
   margin: 100vh;
   margin: 0;
   background-color: #dddbdb;
+  
 }
 
 .container {
   text-align: center;
   background-color: rgb(10, 10, 14);
+  
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   margin-bottom: 20px;
+  width: 18rem;
 }
 .profile-pic {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin-bottom: 5px;
   border-radius: 50%;
 }
 
 h1 {
   color: #ffffff;
+  font-size: 18px;
 }
 
 p {
   color: #ffffff;
   margin: 10px 0 20px;
+  font-size: 12px;
 }
 
 .links {
@@ -52,21 +57,23 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 52px;
+  gap: 75px;
 }
 
 .links a:hover {
-  background-color: #c092c6;
+  background-color: #7d0faa ;
+  box-shadow: 0 0 10px rgba(160, 50, 220, 0.5);
 }
+
 
 .colon {
   position: absolute;
   right: 30px;
+  
 }
 
 .footer {
   text-align: center;
-
   padding: 10px;
   border-radius: 10px;
   margin-top: auto;
@@ -76,7 +83,7 @@ p {
 }
 
 .footer p {
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 .footer a {
@@ -86,4 +93,5 @@ p {
 }
 .footer i {
   margin-right: 5px;
+  
 }

@@ -19,19 +19,86 @@
     <section class="container">
       <img src="perfil_4.jpeg" alt="foto-perfil" class="profile-pic" />
       <h1>  Maria Leilane </h1>
-      <p>Full-Stack Developer</p>
+      <p class="subtitulo">Analista de Sistemas | Desenvolvedora Back-end & Front-end </p>
+
+    <section class="icons">
+      <!-- GitHub -->
+      <a href="https://github.com/mleilane" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/5514982123568" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/in/maria-leilane" target="_blank">
+          <i class="fab fa-linkedin"></i>
+      </a>
+        
+
+      <!-- E-mail -->
+      <a href="mailto:leilane94silva@yahoo.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </section>
+
+      <div class="card">
+       
+        <div class="card-header" id="toggle-button">
+          <div class="card-header-left"> 
+          <img src="sobre.jpeg" alt="Foto Perfil" class="profile-small" />
+          <span>Trajetória Profissional</span>
+        </div>
+          <span class="icon" id="toggle-icon">&#9654;</span> <!-- Ícone de seta -->
+        </div>
+        
+        <div class="card-content hidden" id="expandable-content">
+          <p>Comecei minha jornada profissional acreditando no poder da educação e da tecnologia para transformar realidades — incluindo a minha. Com o tempo, descobri na programação não apenas uma nova carreira, mas uma missão: criar soluções que impactem pessoas de verdade. <br> <br> Hoje atuo como Analista de Sistemas, desenvolvendo habilidades em back-end e front-end, ao mesmo tempo em que compartilho aprendizados, crio projetos autorais como o BookHub e sigo estudando para construir um caminho sólido, inclusivo e com propósito dentro da tecnologia.</p>
+        </div>
+      </div>
+
+
       <section class="links">
-        <a href="https://wa.me/5514982123568" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp <span class="colon">:</span></a>
-        <a href="https://www.linkedin.com/in/maria-leilane" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn <span class="colon">:</span></a>
-        <a href="https://github.com/mleilane" target="_blank"><i class="fab fa-github"></i> GitHub <span class="colon">:</span></a>
-        <a href="https://www.instagram.com/codinggirl__" target="_blank" ><i class="fab fa-instagram"></i> Instagram <span class="colon">:</span></a>
-        <a href="https://www.tiktok.com/@marialeilanne" target="_blank"><i class="fab fa-tiktok"></i> TikTok <span class="colon">:</span></a>
-        <!--<a href="https://www.skoob.com.br/share/user/MariaLeilanne" target="_blank"><i class="fas fa-book"></i> Skoob <span class="colon">:</span></a> -->
+        
+        <a href="#" target="_blank" style="color: white; pointer-events: none;">
+          <div class="link-content">
+            <i class="fas fa-laptop-code"></i>
+            <span>Explore meus projetos (em breve)</span>
+          </div>
+          <!--<i class="fas fa-ellipsis-v"></i>-->
+        </a>
+
+        <a href="https://www.linkedin.com/in/maria-leilane" target="_blank">
+          <div class="link-content">
+            <i class="fab fa-linkedin"></i>
+            <span>Atualizações sobre minha carreira</span>
+          </div>
+          <!--<i class="fas fa-ellipsis-v"></i>-->
+        </a>
+      
+        <a href="https://www.instagram.com/codinggirl__" target="_blank">
+          <div class="link-content">
+            <i class="fab fa-instagram"></i>
+            <span>Acompanhe os bastidores no Instagram</span>
+          </div>
+          <!--<i class="fas fa-ellipsis-v"></i>-->
+        </a>
+      
+        <a href="https://www.tiktok.com/@marialeilanne" target="_blank">
+          <div class="link-content">
+            <i class="fab fa-tiktok"></i>
+            <span>Um mix de tech, hobbies e conteúdo leve</span>
+          </div>
+          <!--<i class="fas fa-ellipsis-v"></i>-->
+        </a>
       </section>
+
       <footer class="footer">
         <p>&copy; <span id="current-year"></span>  Maria Leilane.</p>
         <p>
-          <a href="mailto:leilane94silva@yahoo.com"><i class="fas fa-envelope"></i> leilane94silva@yahoo.com</a> 
+          <!-- <a href="mailto:leilane94silva@yahoo.com"><i class="fas fa-envelope"></i> leilane94silva@yahoo.com</a> -->
          </p>
     </footer>
     </section>
@@ -39,6 +106,21 @@
      <!-- JavaScript -->
      <script>
       document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+      const button = document.getElementById('toggle-button');
+    const content = document.getElementById('expandable-content');
+    const icon = document.getElementById('toggle-icon');
+
+    button.addEventListener('click', () => {
+      content.classList.toggle('hidden');
+      // Alterna o ícone da seta
+      if (content.classList.contains('hidden')) {
+        icon.innerHTML = '&#9654;';  // Setinha para a direita
+      } else {
+        icon.innerHTML = '&#9660;';  // Setinha para baixo
+      }
+    });
+       
     </script>
   </body>
 </html>
